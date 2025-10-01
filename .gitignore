@@ -1,0 +1,6 @@
+.venv/
+.idea/
+
+output/
+ringtones_config.py
+__pycache__/

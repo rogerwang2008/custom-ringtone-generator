@@ -1,0 +1,156 @@
+version = 1
+revision = 1
+requires-python = "==3.12.*"
+
+[[package]]
+name = "custom-ringtone-generator"
+version = "0.1.0"
+source = { virtual = "." }
+dependencies = [
+    { name = "musicpy" },
+    { name = "pedalboard" },
+    { name = "pyaudio" },
+    { name = "pydub" },
+    { name = "pyfluidsynth" },
+    { name = "sf2-loader" },
+]
+
+[package.metadata]
+requires-dist = [
+    { name = "musicpy", specifier = ">=7.11" },
+    { name = "pedalboard", specifier = ">=0.9.17" },
+    { name = "pyaudio", specifier = ">=0.2.14" },
+    { name = "pydub", specifier = ">=0.25.1" },
+    { name = "pyfluidsynth", specifier = ">=1.3.4" },
+    { name = "sf2-loader", specifier = ">=1.25" },
+]
+
+[[package]]
+name = "dataclasses"
+version = "0.8"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/1f/12/7919c5d8b9c497f9180db15ea8ead6499812ea8264a6ae18766d93c59fe5/dataclasses-0.8.tar.gz", hash = "sha256:8479067f342acf957dc82ec415d355ab5edb7e7646b90dc6e2fd1d96ad084c97", size = 36581 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/fe/ca/75fac5856ab5cfa51bbbcefa250182e50441074fdc3f803f6e76451fab43/dataclasses-0.8-py3-none-any.whl", hash = "sha256:0201d89fa866f68c8ebd9d08ee6ff50c0b255f8ec63a71c16fda7af82bb887bf", size = 19041 },
+]
+
+[[package]]
+name = "mido-fix"
+version = "1.2.12"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/40/10/fbb659e1691077f7159e6350efcecda9f4e2f2eedf4a5ee59869ba2a7038/mido_fix-1.2.12.tar.gz", hash = "sha256:8ce7ad87f847de36c7dd3048876581113c4d83367d1f392e5a7a9f9562b3374e", size = 99443 }
+
+[[package]]
+name = "musicpy"
+version = "7.11"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "dataclasses" },
+    { name = "mido-fix" },
+    { name = "pygame-ce" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/d7/54/d7b227456a9ff94ef93abb5f1ad1dc3e5e72abdb40350c7956d0ba72577f/musicpy-7.11.tar.gz", hash = "sha256:7957971dc1be5b310a83253acd8dd8d3ce803ba47f67d88603904667badde993", size = 116237 }
+
+[[package]]
+name = "numpy"
+version = "2.3.3"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/d0/19/95b3d357407220ed24c139018d2518fab0a61a948e68286a25f1a4d049ff/numpy-2.3.3.tar.gz", hash = "sha256:ddc7c39727ba62b80dfdbedf400d1c10ddfa8eefbd7ec8dcb118be8b56d31029", size = 20576648 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/51/5d/bb7fc075b762c96329147799e1bcc9176ab07ca6375ea976c475482ad5b3/numpy-2.3.3-cp312-cp312-macosx_10_13_x86_64.whl", hash = "sha256:cfdd09f9c84a1a934cde1eec2267f0a43a7cd44b2cca4ff95b7c0d14d144b0bf", size = 20957014 },
+    { url = "https://files.pythonhosted.org/packages/6b/0e/c6211bb92af26517acd52125a237a92afe9c3124c6a68d3b9f81b62a0568/numpy-2.3.3-cp312-cp312-macosx_11_0_arm64.whl", hash = "sha256:cb32e3cf0f762aee47ad1ddc6672988f7f27045b0783c887190545baba73aa25", size = 14185220 },
+    { url = "https://files.pythonhosted.org/packages/22/f2/07bb754eb2ede9073f4054f7c0286b0d9d2e23982e090a80d478b26d35ca/numpy-2.3.3-cp312-cp312-macosx_14_0_arm64.whl", hash = "sha256:396b254daeb0a57b1fe0ecb5e3cff6fa79a380fa97c8f7781a6d08cd429418fe", size = 5113918 },
+    { url = "https://files.pythonhosted.org/packages/81/0a/afa51697e9fb74642f231ea36aca80fa17c8fb89f7a82abd5174023c3960/numpy-2.3.3-cp312-cp312-macosx_14_0_x86_64.whl", hash = "sha256:067e3d7159a5d8f8a0b46ee11148fc35ca9b21f61e3c49fbd0a027450e65a33b", size = 6647922 },
+    { url = "https://files.pythonhosted.org/packages/5d/f5/122d9cdb3f51c520d150fef6e87df9279e33d19a9611a87c0d2cf78a89f4/numpy-2.3.3-cp312-cp312-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl", hash = "sha256:1c02d0629d25d426585fb2e45a66154081b9fa677bc92a881ff1d216bc9919a8", size = 14281991 },
+    { url = "https://files.pythonhosted.org/packages/51/64/7de3c91e821a2debf77c92962ea3fe6ac2bc45d0778c1cbe15d4fce2fd94/numpy-2.3.3-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:d9192da52b9745f7f0766531dcfa978b7763916f158bb63bdb8a1eca0068ab20", size = 16641643 },
+    { url = "https://files.pythonhosted.org/packages/30/e4/961a5fa681502cd0d68907818b69f67542695b74e3ceaa513918103b7e80/numpy-2.3.3-cp312-cp312-musllinux_1_2_aarch64.whl", hash = "sha256:cd7de500a5b66319db419dc3c345244404a164beae0d0937283b907d8152e6ea", size = 16056787 },
+    { url = "https://files.pythonhosted.org/packages/99/26/92c912b966e47fbbdf2ad556cb17e3a3088e2e1292b9833be1dfa5361a1a/numpy-2.3.3-cp312-cp312-musllinux_1_2_x86_64.whl", hash = "sha256:93d4962d8f82af58f0b2eb85daaf1b3ca23fe0a85d0be8f1f2b7bb46034e56d7", size = 18579598 },
+    { url = "https://files.pythonhosted.org/packages/17/b6/fc8f82cb3520768718834f310c37d96380d9dc61bfdaf05fe5c0b7653e01/numpy-2.3.3-cp312-cp312-win32.whl", hash = "sha256:5534ed6b92f9b7dca6c0a19d6df12d41c68b991cef051d108f6dbff3babc4ebf", size = 6320800 },
+    { url = "https://files.pythonhosted.org/packages/32/ee/de999f2625b80d043d6d2d628c07d0d5555a677a3cf78fdf868d409b8766/numpy-2.3.3-cp312-cp312-win_amd64.whl", hash = "sha256:497d7cad08e7092dba36e3d296fe4c97708c93daf26643a1ae4b03f6294d30eb", size = 12786615 },
+    { url = "https://files.pythonhosted.org/packages/49/6e/b479032f8a43559c383acb20816644f5f91c88f633d9271ee84f3b3a996c/numpy-2.3.3-cp312-cp312-win_arm64.whl", hash = "sha256:ca0309a18d4dfea6fc6262a66d06c26cfe4640c3926ceec90e57791a82b6eee5", size = 10195936 },
+]
+
+[[package]]
+name = "pedalboard"
+version = "0.9.17"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "numpy" },
+]
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/68/6f/d0ca90b91ba19b17796d5c4b1b722e32f7528c50571b3755d3604ec64822/pedalboard-0.9.17-cp312-cp312-macosx_10_14_universal2.whl", hash = "sha256:2f98720a207c04c0cf20f7ef01f2ec0762cc8712dd1f69982dd6508a97b43d5c", size = 4989679 },
+    { url = "https://files.pythonhosted.org/packages/a0/96/355d3170fd8fb903d782dcbdba475e3c9303acd3cca8c54bd1d7c77eb95d/pedalboard-0.9.17-cp312-cp312-macosx_10_14_x86_64.whl", hash = "sha256:0daa30794a169201671395c0a5da7cb225e39ef05055d9c9e81cf878de65e285", size = 2752911 },
+    { url = "https://files.pythonhosted.org/packages/22/32/0d47ab1b9ba1739677d951a44b70c52c8e15618e53a6eeb0e5a788a73c53/pedalboard-0.9.17-cp312-cp312-macosx_11_0_arm64.whl", hash = "sha256:0e0d917e814f1e48e3b8b7927d50153c08e341d371d54a1e3c9312aa7d404e42", size = 2533501 },
+    { url = "https://files.pythonhosted.org/packages/17/8f/e09bd54e1cf31f8d0fd65e7ab136644ad74c733f4e8911989cf397ea0785/pedalboard-0.9.17-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:2b81de1a41e0089c39e3a2d140b579536af9bd9b48c7f1690148df287fa11d45", size = 4657671 },
+    { url = "https://files.pythonhosted.org/packages/bf/43/4079fbea1b68b70511bbf53c4bc7d654dfa9e7c28a1b1ddaefd0214bf477/pedalboard-0.9.17-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:6a7c6ee49c8c9eabe0c787450f440fb8d3857949cff03299805134ac519887ea", size = 4835439 },
+    { url = "https://files.pythonhosted.org/packages/f5/fb/4cdf8748c587dfa74572e4add0597223a3d9080baa1668ac729bc152e4c6/pedalboard-0.9.17-cp312-cp312-musllinux_1_1_aarch64.whl", hash = "sha256:a3446a541ec006dbde94fad5dd5512c58deb38bf3c6d6fe2918ec483ebf1e6f0", size = 5111633 },
+    { url = "https://files.pythonhosted.org/packages/3f/bb/38a68d61a4f6da4e0930d732c5efde27b103fe7528060ca0dbc1acd1017e/pedalboard-0.9.17-cp312-cp312-musllinux_1_1_x86_64.whl", hash = "sha256:6286e96aafa83691ca7601b94cba35a47ba0c96bb7336cc04e117e249339b597", size = 5174097 },
+    { url = "https://files.pythonhosted.org/packages/d5/4d/d4f8309d58ac09db2309aebfee0f1d47709c61b500a65adf0594c81f8c01/pedalboard-0.9.17-cp312-cp312-win_amd64.whl", hash = "sha256:85ab8a0dea8bff5ec5439882b81ae45a079fcc6105cdd27e2366982ab304b896", size = 3551487 },
+]
+
+[[package]]
+name = "py"
+version = "1.11.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/98/ff/fec109ceb715d2a6b4c4a85a61af3b40c723a961e8828319fbcb15b868dc/py-1.11.0.tar.gz", hash = "sha256:51c75c4126074b472f746a24399ad32f6053d1b34b68d2fa41e558e6f4a98719", size = 207796 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/f6/f0/10642828a8dfb741e5f3fbaac830550a518a775c7fff6f04a007259b0548/py-1.11.0-py2.py3-none-any.whl", hash = "sha256:607c53218732647dff4acdfcd50cb62615cedf612e72d1724fb1a0cc6405b378", size = 98708 },
+]
+
+[[package]]
+name = "pyaudio"
+version = "0.2.14"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/26/1d/8878c7752febb0f6716a7e1a52cb92ac98871c5aa522cba181878091607c/PyAudio-0.2.14.tar.gz", hash = "sha256:78dfff3879b4994d1f4fc6485646a57755c6ee3c19647a491f790a0895bd2f87", size = 47066 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/8d/45/8d2b76e8f6db783f9326c1305f3f816d4a12c8eda5edc6a2e1d03c097c3b/PyAudio-0.2.14-cp312-cp312-win32.whl", hash = "sha256:5fce4bcdd2e0e8c063d835dbe2860dac46437506af509353c7f8114d4bacbd5b", size = 144750 },
+    { url = "https://files.pythonhosted.org/packages/b0/6a/d25812e5f79f06285767ec607b39149d02aa3b31d50c2269768f48768930/PyAudio-0.2.14-cp312-cp312-win_amd64.whl", hash = "sha256:12f2f1ba04e06ff95d80700a78967897a489c05e093e3bffa05a84ed9c0a7fa3", size = 164126 },
+]
+
+[[package]]
+name = "pydub"
+version = "0.25.1"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/fe/9a/e6bca0eed82db26562c73b5076539a4a08d3cffd19c3cc5913a3e61145fd/pydub-0.25.1.tar.gz", hash = "sha256:980a33ce9949cab2a569606b65674d748ecbca4f0796887fd6f46173a7b0d30f", size = 38326 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/a6/53/d78dc063216e62fc55f6b2eebb447f6a4b0a59f55c8406376f76bf959b08/pydub-0.25.1-py2.py3-none-any.whl", hash = "sha256:65617e33033874b59d87db603aa1ed450633288aefead953b30bded59cb599a6", size = 32327 },
+]
+
+[[package]]
+name = "pyfluidsynth"
+version = "1.3.4"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "numpy" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/73/70/fbdd07c84d98c3d4382f4e51bdaa2cf1424a30c41f655ff43c1b2c1d3441/pyfluidsynth-1.3.4.tar.gz", hash = "sha256:ca741c262b72e48963149c73bf8ae80e45c84c23c9bdf803a26ba324cbb2d5b2", size = 30772 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/c4/91/4f6b28ac379da306dde66ba6ac170c4a6e7e1506cadc84a9359fe3f237ba/pyfluidsynth-1.3.4-py3-none-any.whl", hash = "sha256:c6990329db7cfb35f5e65d523dd4f0c971d928e70df3a6bceec8864827edf246", size = 22446 },
+]
+
+[[package]]
+name = "pygame-ce"
+version = "2.5.5"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/c9/be/af69521e694442dbde5db29069953f25367ddacaa50d9ae644745853d37c/pygame_ce-2.5.5.tar.gz", hash = "sha256:a7f297c223c6e35f16d65d47a19757005763ea7e90795ccc37c0bc562364ae6b", size = 5821935 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/60/2c/45729f86bd7d1b67062be9c44618d7a4269a3892b35d9677e09f3409e91e/pygame_ce-2.5.5-cp312-cp312-macosx_10_13_x86_64.whl", hash = "sha256:cb6801f224a806f883e5de558d3424a53e714abec7d6a47d32fc6b9cfa92e598", size = 12409360 },
+    { url = "https://files.pythonhosted.org/packages/6c/28/96d776b0c8efe9939c05ac15ea317b687cec6684ac9808d1c771029e308c/pygame_ce-2.5.5-cp312-cp312-macosx_11_0_arm64.whl", hash = "sha256:adddaf63af2f5b5d0a3840aa73021b71766fa16c1ed3fc18756b54e90b66592f", size = 11660289 },
+    { url = "https://files.pythonhosted.org/packages/24/01/48bad8a2431507efc3b357816cbbd4815bba063f09becd54f8d9c5b04b20/pygame_ce-2.5.5-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:1602ed3dd274e36d5c6008ff2c500223bea38aab0d4fa4a8eae0a0e5897bcb88", size = 12290133 },
+    { url = "https://files.pythonhosted.org/packages/ac/5d/0edb786e614bd8d5e2d34a864f0d0ac1ed6b035d7eea04976dbd35bb7e3f/pygame_ce-2.5.5-cp312-cp312-manylinux_2_17_i686.manylinux2014_i686.whl", hash = "sha256:eb42884c847d54a40c98cf631ca8014406eaf8bbfeddde298269193c533a61eb", size = 12823259 },
+    { url = "https://files.pythonhosted.org/packages/d5/72/3ae43a335e80f55f3243d674cf47becf17e2a4c565d745b961c50aeec7a1/pygame_ce-2.5.5-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:13dec639f227dd1092b161e696769f8b6dfbeb92e4e4fabc729dc689a4c63997", size = 12467026 },
+    { url = "https://files.pythonhosted.org/packages/0a/30/71e761df3d3567b59f7f73b938c682aaf2e6406d248d871ae5dd569d94e1/pygame_ce-2.5.5-cp312-cp312-win32.whl", hash = "sha256:356ba09a684a92b04330d3d6bb3136066a170aea15f300b078edda347b719fb2", size = 9802023 },
+    { url = "https://files.pythonhosted.org/packages/8a/77/adca7896a89d2a30d974bd337ac8adfa14e031f52319c5bfa379be092ade/pygame_ce-2.5.5-cp312-cp312-win_amd64.whl", hash = "sha256:7863dbaf5c33bbba878b6e5aa1b11592048a96b383b11dac15a0837a14c30b62", size = 10378199 },
+]
+
+[[package]]
+name = "sf2-loader"
+version = "1.25"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "musicpy" },
+    { name = "numpy" },
+    { name = "py" },
+    { name = "pydub" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/e5/71/5d3e65e120c6faf7321044f76ac21b721907cd71f56ac031ce48fc1f6dba/sf2_loader-1.25.tar.gz", hash = "sha256:9f374d2b3654eac2471a3c8216c30b453334f12dc6193a7bced376e094d0f8a1", size = 7556230 }
